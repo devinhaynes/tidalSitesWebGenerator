@@ -1,0 +1,49 @@
+.navbar {
+  background: #333;
+  color: white;
+  height: 75px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  box-shadow: 0px 4px 8px #999;
+
+  .logoBox {
+    height: 75px;
+    min-width: 150px;
+    background: white;
+    margin-right: auto;
+  }
+
+  #logo {
+    background-image: url("/src/style/logo75.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .title {
+    width: 100%;
+    text-align: center;
+  }
+
+  #publish {
+    min-width: 150px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    button {
+      height: 50%;
+      width: 50%;
+      border-radius: 5px;
+      cursor: pointer;
+      background: #00afdb;
+      color: white;
+
+      &:hover {
+        color: #00afdb;
+        background: white;
+      }
+    }
+  }
+}

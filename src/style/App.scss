@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+  font-family: "Montserrat";
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+input {
+  font-size: 16px;
+}
+
+input:focus {
+  outline: none;
+  box-shadow: inset 1px 1px 1px #00afdb, inset -1px -1px 1px #00afdb;
+}
+
+input[type="text"] {
+  border: 1px solid #333;
+  border-radius: 20px;
+  padding: 10px;
+}
+
+textarea {
+  border: 1px solid #333;
+  border-radius: 20px;
+  padding: 10px;
+}
+
+textarea:focus {
+  outline: none;
+}
+
+button {
+  border: 1px solid #00afdb;
+  padding: 5px;
+  border-radius: 20px;
+  font-size: 12px;
+}
+
+#bodyContent {
+  display: flex;
+  min-height: 100vh;
+}
+
+.content {
+  margin: 20px 30px;
+  display: block;
+  float: left;
+  width: 100%;
+
+  h2 {
+    padding: 20px;
+    background: linear-gradient(63deg, #00afdb 1%, white 4%),
+      linear-gradient(100deg, #ee98d2, white);
+    border-bottom: 2px solid #00afdb;
+    min-width: 500px;
+    text-align: center;
+  }
+
+  .innerContent {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .btn-float {
+    position: fixed;
+    right: 50px;
+    bottom: 50px;
+  }
+
+  .btn-plus {
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    width: 50px;
+    height: 50px;
+  }
+
+  .form-group {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    min-width: 500px;
+    padding: 20px;
+    margin-top: 20px;
+    border-bottom: 1px solid #333;
+
+    input,
+    label,
+    textarea {
+      width: 50%;
+    }
+  }
+
+  .btn-group {
+    display: flex;
+    justify-content: flex-end;
+    margin: 20px;
+
+    button {
+      margin: 0 10px;
+      padding: 10px;
+      background: #00afdb;
+      color: white;
+
+      &:hover {
+        color: #00afdb;
+        background: white;
+        cursor: pointer;
+      }
+
+      &.btn-remove {
+        background: #dd3333;
+        color: white;
+        border-color: #dd3333;
+
+        &:hover {
+          color: #dd3333;
+          background: white;
+        }
+      }
+    }
+  }
+}
